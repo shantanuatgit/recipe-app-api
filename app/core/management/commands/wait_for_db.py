@@ -6,7 +6,7 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    """Django command to pause exection until database available"""
+    """Django command to pause the exection until database available"""
     def handle(self, *args, **options):
         self.stdout.write('Waiting for the database...')
         db_conn = None
